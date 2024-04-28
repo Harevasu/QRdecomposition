@@ -23,8 +23,6 @@ def QR_Decomposition(A):
     n,m=A.shape
     Q=np.empty((n,n))
     u=np.empty((n,n))
-```
-```
     u[:, 0]=A[:, 0]
     Q[:, 0]=u[:, 0]/np.linalg.norm(u[:, 0])
     for i in range(1,n):
